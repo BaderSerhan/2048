@@ -61,3 +61,10 @@ LocalStorageManager.prototype.setGameState = function (gameState) {
 LocalStorageManager.prototype.clearGameState = function () {
   this.storage.removeItem(this.gameStateKey);
 };
+
+LocalStorageManager.prototype.getPedagogueVariables = function () {
+  return ({
+    maximum_number_of_retries: 3,
+    maximum_tile: 2048,
+  });
+};
